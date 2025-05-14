@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Fellix';
+  src:
+    local('Fellix Regular'),
+    local('Fellix-Regular'),
+    url('/fonts/Fellix-Regular.woff2') format('woff2'),
+    url('/fonts/Fellix-Regular.woff') format('woff'),
+    url('/fonts/Fellix-Regular.ttf') format('truetype'),
+    url('/fonts/Fellix-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fellix';
+  src:
+    local('Fellix Regular Italic'),
+    local('Fellix-RegularItalic'),
+    url('/fonts/Fellix-RegularItalic.woff2') format('woff2'),
+    url('/fonts/Fellix-RegularItalic.woff') format('woff'),
+    url('/fonts/Fellix-RegularItalic.ttf') format('truetype'),
+    url('/fonts/Fellix-RegularItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Fellix';
+  src:
+    local('Fellix Medium'),
+    local('Fellix-Medium'),
+    url('/fonts/Fellix-Medium.woff2') format('woff2'),
+    url('/fonts/Fellix-Medium.woff') format('woff'),
+    url('/fonts/Fellix-Medium.ttf') format('truetype'),
+    url('/fonts/Fellix-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fellix';
+  src:
+    local('Fellix Bold'),
+    local('Fellix-Bold'),
+    url('/fonts/Fellix-Bold.woff2') format('woff2'),
+    url('/fonts/Fellix-Bold.woff') format('woff'),
+    url('/fonts/Fellix-Bold.ttf') format('truetype'),
+    url('/fonts/Fellix-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
