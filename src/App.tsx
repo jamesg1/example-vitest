@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { createBrowserRouter, Navigate, Outlet, redirect, RouterProvider } from 'react-router-dom';
+import Component1 from './Component1';
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,7 +25,17 @@ const router = (queryClient: QueryClient) => {
     [
       {
         path: '/',
-        element: <App />,
+        element: <RootLayout />,
+        children: [
+          {
+            index: true,
+            element: <Navigate to="/home" replace />,
+          },
+          {
+            path: 'home',
+            element: <Component1 />
+          }
+        ],
       },
     ],
     {
