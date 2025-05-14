@@ -38,9 +38,7 @@ vi.mock('./components/AuthContext', () => ({
   getStoredToken: () => vi.fn(),
 }));
 
-vi.mock('./ProtectedRoute', () => ({
-  default: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
-}));
+
 
 vi.mock('./components/layout/Layout', () => ({
   default: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,

@@ -1,7 +1,5 @@
 import type React from 'react';
 import { Navigate } from 'react-router-dom';
-import { verifyToken } from './services/api';
-import { getStoredToken } from './components/AuthContext';
 
 interface ProtectedRouteProps {
   children: React.ReactNode;

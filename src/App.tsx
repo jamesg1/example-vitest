@@ -3,7 +3,6 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { QueryClient, QueryClientProvider, useQueryClient } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { createBrowserRouter, Navigate, Outlet, redirect, RouterProvider } from 'react-router-dom';
-import ProtectedRoute from './ProtectedRoute';
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -19,22 +18,6 @@ const RootLayout = () => (
     <Outlet />
   </>
 );
-
-const loginRedirectLoader = async () => {
-  const auth = localStorage.getItem('accessToken');
-  if (auth) {
-    throw redirect('/home');
-  }
-  return null;
-};
-
-const ProtectedLayout = () => {
-  return (
-    <ProtectedRoute>
-      <Outlet />
-    </ProtectedRoute>
-  );
-};
 
 const router = (queryClient: QueryClient) => {
   return createBrowserRouter(
